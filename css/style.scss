@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap");
+
+$main-color: #4d4d4d;
+
+*{
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    
+}
+.navbar-default{
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    .navbar-nav{
+        li{
+            a{
+                color: $main-color;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 400;
+                
+            }
+            &:after{
+                content: '';
+                display: block;
+                 background-color: #878787;
+                 height: 2px;
+                 width: 0;
+                 transition: 0.5s;
+                
+             }
+             &:hover{
+                 &:after{
+                   
+                    width: 100%;
+                 }
+             }
+        }
+}
+}
+.banner{
+        background-image: url(../images/banner_02.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+.block{
+    font-weight: 500;
+    h1{
+        font-size: 90px;
+        color: $main-color;
+        margin-top: 180px;
+    }
+    p{
+        color: #878787;
+        font-size: 22px;
+        margin-bottom: 32px;
+       
+    }
+   
+   
+}
+.block--btn{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+    width: 160px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: $main-color;
+    background-color: transparent;
+    border: 1px solid $main-color;
+    &:hover{
+        text-decoration: none;
+        color: $main-color;
+        background-color: #fff;
+        border:  1px solid #fff;
+        
+    }
+}
+.block--img img{
+    width: 100%;
+}
+.about{
+    padding-top: 109px;
+    padding-bottom: 124px;
+    .about-left{
+    padding-top: 66px;
+        h2{
+            color: #7b7b7b;
+            font-weight: 700;
+            font-size: 46px;
+            text-transform: uppercase;
+            &:before{
+                content: '';
+                display: block;
+                margin-bottom: 20px;
+                width: 10%;
+                height: 4px;
+                background-color: #7b7b7b;
+                
+
+            }
+        }
+        p{
+            font-size: 16px;
+            color: $main-color;
+            margin-bottom: 37px;
+        }
+    }
+    .about-right{
+        img{
+            width: 100%;
+        }
+    }
+}
+.topic{
+    color: #7b7b7b;
+    font-weight: 700;
+    font-size: 46px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+    &:before{
+        content: '';
+        position: absolute;
+        transform: translateX(-50%);
+        right: 50%;
+        left: 50%;
+        display: block;
+        width: 50px;
+        height: 4px;
+        background-color: #7b7b7b;
+        bottom: 55px;
+    }
+}
+.services{
+    background-color: #f6f6f6;
+    padding-top: 119px;
+    padding-bottom: 114px;
+    text-align: center;
+    font-size: 30px;
+    .services-pic {
+        
+        img{
+            margin-top: 82px;
+        }
+        p{
+            color: $main-color;
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+
+    }
+
+}
+
+.skills{
+    padding-top: 117px;
+    padding-bottom: 126px;
+    text-align: center;
+    img{
+        margin-top: 62px;
+        width: 100%;
+    }
+}
+.portfolio{
+    background-color: #f6f6f6;
+    padding-top: 126px;
+    padding-bottom: 108px;
+    overflow: hidden;
+    .topic__portfolio{
+        margin-bottom: 46px;
+    }
+    img{
+        margin-bottom: 30px;
+    }
+    .portfolio__btn{
+        text-align: center;
+    }
+}
+
+// testimonials
+.testi{
+    padding-top: 126px;
+    padding-bottom: 122px;
+    .owl-carousel{
+        margin-top: 59px;
+        border: 1px solid #212121;
+        padding: 76px 30px 50px 120px;
+    }
+}
+.testi__pic{
+    display: inline-block;
+    width: 159px;
+    height: 159px;
+   
+}
+.testi__text{
+    display: inline-block;
+    max-width: 570px;
+    margin-left: 32px;
+    text-transform: uppercase;
+    h4{
+        font-size: 30px;
+        color: #454545;
+        margin: 0;
+        font-weight: 500;
+        
+    }
+    span{
+        font-size: 12px;
+        color: #454545;
+       font-style: italic;
+    }
+    p{
+        color: #919191;
+        font-size: 16px;
+        line-height: 26px;
+       margin-top: 20px;
+       margin-bottom: 0;
+    }
+}
+
+// Carousel
+
+.owl-dots {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  .owl-dot {
+    outline: none;
+    span{
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        border: 1px solid #212121;
+        background-color: transparent;
+        margin-right: 4px;
+    }
+  }
+  
+  .owl-dot.active {
+   span{
+    display: inline-block;
+    margin-right: 4px;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #212121;
+   background-color: #212121;
+   }
+  }
+
+// advantage
+.advantage{
+    padding-top: 52px;
+    padding-bottom: 65px;
+    background-color: #f6f6f6;
+    text-align: center;
+    margin-bottom: 153px;
+    span{
+        display: block;
+        font-size: 30px;
+        font-weight: 500; 
+       
+    }
+    p{
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+}
+
+// say
+ .say{
+    background-image: url(../images/footer_02.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 144px;
+    padding-bottom: 29px;
+    .topic__say{
+        color: #f2f2f2;
+        &::before{
+          background-color: #c1c1c1;
+        }
+    }
+    form{
+        margin-top: 69px;
+        text-align: center;
+        input{
+            height: 56px;
+            margin-bottom: 29px;
+            margin-left: 0;
+           
+        }
+        textarea{
+           resize: none;
+        }
+    }
+ }
+ 
