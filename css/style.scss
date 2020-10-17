@@ -7,6 +7,11 @@ $main-color: #4d4d4d;
     font-weight: 400;
     
 }
+.navbar-collapse{
+    border: none;
+    position: absolute;
+    right: 20px;
+}
 .navbar-default{
     background-image: none;
     background-color: transparent;
@@ -83,6 +88,9 @@ $main-color: #4d4d4d;
 .block--img img{
     width: 100%;
 }
+
+// about
+
 .about{
     padding-top: 109px;
     padding-bottom: 124px;
@@ -137,6 +145,9 @@ $main-color: #4d4d4d;
         bottom: 55px;
     }
 }
+
+// services
+
 .services{
     background-color: #f6f6f6;
     padding-top: 119px;
@@ -147,6 +158,8 @@ $main-color: #4d4d4d;
         
         img{
             margin-top: 82px;
+            overflow: hidden;
+            
         }
         p{
             color: $main-color;
@@ -160,6 +173,8 @@ $main-color: #4d4d4d;
 
 }
 
+// skills
+
 .skills{
     padding-top: 117px;
     padding-bottom: 126px;
@@ -169,6 +184,9 @@ $main-color: #4d4d4d;
         width: 100%;
     }
 }
+
+// portfolio
+
 .portfolio{
     background-color: #f6f6f6;
     padding-top: 126px;
@@ -182,7 +200,20 @@ $main-color: #4d4d4d;
     }
     .portfolio__btn{
         text-align: center;
+        a{
+            border: none;
+            
+        }
     }
+   
+}
+@keyframes jump-btn {
+    0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5); }
+  100% { bottom: 50px; box-shadow: 0 50px 50px rgba(0,0,0,0.1); }
+}
+
+.shadow__btn {
+    animation: jump-btn 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
 }
 
 // testimonials
@@ -280,11 +311,12 @@ $main-color: #4d4d4d;
 // say
  .say{
     background-image: url(../images/footer__luis_03.jpg);
-    height: 100vh;
+   width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 144px;
-    padding-bottom: 29px;
+    padding-bottom: 38px;
+    
     .topic__say{
         color: #f2f2f2;
         &::before{
@@ -321,6 +353,7 @@ $main-color: #4d4d4d;
                font-size: 12px;
                margin-left: 7px;
                background-color: #ffffff;
+               
            }
             }
             
@@ -331,6 +364,7 @@ $main-color: #4d4d4d;
  footer{
      border-top: 1px solid #ffffff;
      margin-top: 32px;
+     
      .say__social{
        margin-top: 32px;
       display: inline-block;
@@ -382,3 +416,4 @@ $main-color: #4d4d4d;
      }
      
  }
+ 
