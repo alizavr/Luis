@@ -198,6 +198,8 @@
 
 .portfolio .topic__portfolio {
   margin-bottom: 46px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .portfolio img {
