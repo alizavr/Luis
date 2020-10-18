@@ -1,21 +1,35 @@
 @media only screen and (max-width: 1024px) {
-
-    
+    .banner{
+        height: 70vh;
+    }
+    .about-right img{
+        margin-top: 20px;
+    }
 }
 @media only screen and (max-width: 992px) {
-
+    .testi__text{
+        margin-left: 0;
+    }
+    .block a{
+        margin-top: 5px;
+        margin-bottom: 5px;
+            }
+            .banner{
+                height: 100vh;
+            }
 }
 @media only screen and (max-width: 767px) {
-    
+    .banner{
+        height: 80vh;
+    }
      .block h1{
+         max-width: 320px;
         font-size: 70px;
-        margin-top: 40px;
+        margin-top: 120px;
+        margin-bottom: 10px;
     }
     .block p{
         font-size: 15px;
-    }
-    .block a{
-margin-top: 10px;
     }
     .block--img {
         display: none;
@@ -27,14 +41,23 @@ margin-top: 10px;
      .about .about-left h2{
         font-size: 30px;
     }
-    .about .about-left, .about-right, .services, .skills, .portfolio, .say{
+    .about .about-left, .about-right, .services, .skills, .portfolio, .testi, .say{
         padding-top: 20px;
     }
     
+    .portfolio_hidden {
+        display: none;
+    }
+    .testi .owl-carousel{
+        padding: 20px;
+     }  
+}
+@media only screen and (max-width: 540px) {
     
 }
-@media only screen and (max-width: 420px) {
 
+@media only screen and (max-width: 420px) {
+    
 }
 @media only screen and (max-width: 375px) {
 
@@ -43,7 +66,5 @@ margin-top: 10px;
 
 }
 @media only screen and (max-width: 320px) {
-    
-
-
+   
 }

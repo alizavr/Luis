@@ -5,7 +5,11 @@ $main-color: #4d4d4d;
 *{
     font-family: 'Asap', sans-serif;
     font-weight: 400;
-    
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
 }
 .navbar-collapse{
     border: none;
@@ -18,6 +22,7 @@ $main-color: #4d4d4d;
     border: none;
     box-shadow: none;
     .navbar-nav{
+        margin-right: 40px;
         li{
             a{
                 color: $main-color;
@@ -28,7 +33,7 @@ $main-color: #4d4d4d;
             }
             &:after{
                 content: '';
-                display: block;
+                 display: block;
                  background-color: #878787;
                  height: 2px;
                  width: 0;
@@ -37,8 +42,7 @@ $main-color: #4d4d4d;
              }
              &:hover{
                  &:after{
-                   
-                    width: 100%;
+                   width: 100%;
                  }
              }
         }
@@ -49,9 +53,10 @@ $main-color: #4d4d4d;
         height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
+        
     }
 .block{
-    font-weight: 500;
+        font-weight: 500;
     h1{
         font-size: 90px;
         color: $main-color;
@@ -87,6 +92,7 @@ $main-color: #4d4d4d;
 }
 .block--img img{
     width: 100%;
+    margin-top: 60px;
 }
 
 // about
@@ -95,7 +101,7 @@ $main-color: #4d4d4d;
     padding-top: 109px;
     padding-bottom: 124px;
     .about-left{
-    padding-top: 66px;
+        padding-top: 66px;
         h2{
             color: #7b7b7b;
             font-weight: 700;
@@ -108,14 +114,17 @@ $main-color: #4d4d4d;
                 width: 10%;
                 height: 4px;
                 background-color: #7b7b7b;
-                
-
             }
         }
         p{
             font-size: 16px;
             color: $main-color;
             margin-bottom: 37px;
+        }
+        .about--btn{
+            &:hover{
+                border: 1px solid #494949;
+            }
         }
     }
     .about-right{
@@ -158,7 +167,7 @@ $main-color: #4d4d4d;
         
         img{
             margin-top: 82px;
-            overflow: hidden;
+            
             
         }
         p{
@@ -191,19 +200,19 @@ $main-color: #4d4d4d;
     background-color: #f6f6f6;
     padding-top: 126px;
     padding-bottom: 108px;
-    overflow: hidden;
+    
     .topic__portfolio{
         margin-bottom: 46px;
     }
     img{
         margin-bottom: 30px;
+        width: 100%;
+     &:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+     }
     }
-    .portfolio__btn{
-        text-align: center;
-        a{
-            border: none;
-            
-        }
+    button:focus{
+        outline: none;
     }
    
 }
@@ -215,6 +224,19 @@ $main-color: #4d4d4d;
 .shadow__btn {
     animation: jump-btn 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
 }
+.scale {
+    transition: 1s; 
+   }
+   .scale:hover {
+    transform: scale(1.05); 
+   }
+   .well{
+       border: none;
+       background-image: none;
+       box-shadow: none;
+       padding: 0;
+       
+   }
 
 // testimonials
 .testi{
@@ -247,14 +269,14 @@ $main-color: #4d4d4d;
     span{
         font-size: 12px;
         color: #454545;
-       font-style: italic;
+        font-style: italic;
     }
     p{
         color: #919191;
         font-size: 16px;
         line-height: 26px;
-       margin-top: 20px;
-       margin-bottom: 0;
+        margin-top: 20px;
+        margin-bottom: 0;
     }
 }
 
@@ -285,7 +307,7 @@ $main-color: #4d4d4d;
     width: 13px;
     height: 13px;
     border: 1px solid #212121;
-   background-color: #212121;
+    background-color: #212121;
    }
   }
 
@@ -300,7 +322,6 @@ $main-color: #4d4d4d;
         display: block;
         font-size: 30px;
         font-weight: 500; 
-       
     }
     p{
         font-size: 22px;
@@ -311,11 +332,13 @@ $main-color: #4d4d4d;
 // say
  .say{
     background-image: url(../images/footer__luis_03.jpg);
-   width: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 144px;
     padding-bottom: 38px;
+    position: relative;
+    
     
     .topic__say{
         color: #f2f2f2;
@@ -330,22 +353,22 @@ $main-color: #4d4d4d;
         input{
             height: 56px;
             margin-bottom: 29px;
-            margin-left: 0;
             border-radius: 0;
         }
         textarea{
            resize: none;
            border-radius: 0;
+           height: 200px;
+           margin-bottom: 27px;
         }
         .say__btn{
-            margin-top: 29px;
             margin-bottom: 57px;
             .btn{
             background-color: #ffffff;
             font-size: 16px;
-           line-height: 40px;
-           padding: 0 30px;
-           border-radius: 0;
+            line-height: 40px;
+            padding: 0 30px;
+            border-radius: 0;
            &:after{
                content: '\f1d8';
                font-family: "Font Awesome 5 Free";
@@ -356,8 +379,6 @@ $main-color: #4d4d4d;
                
            }
             }
-            
-
         }
     }
  }
@@ -367,14 +388,14 @@ $main-color: #4d4d4d;
      
      .say__social{
        margin-top: 32px;
-      display: inline-block;
+       display: inline-block;
        
         a{
             background-color: #ffffff;
             width: 27px;
             line-height: 27px;
             text-align: center;
-            color: #4d4d4d;
+            color: $main-color;
             text-decoration: none;
             margin-right: 7px;
    
@@ -416,4 +437,18 @@ $main-color: #4d4d4d;
      }
      
  }
- 
+ .top--foot{
+     display: block;
+     position: absolute;
+     width: 45px;
+     line-height: 40px;
+     background-color: #ffffff;
+     right: 20px;
+     bottom: 160px;
+     font-size: 20px;
+     color: $main-color;
+     text-align: center;
+&:hover{
+    color: $main-color;
+}
+ }

@@ -4,6 +4,11 @@
   font-weight: 400;
 }
 
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .navbar-collapse {
   border: none;
   position: absolute;
@@ -16,6 +21,10 @@
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.navbar-default .navbar-nav {
+  margin-right: 40px;
 }
 
 .navbar-default .navbar-nav li a {
@@ -84,6 +93,7 @@
 
 .block--img img {
   width: 100%;
+  margin-top: 60px;
 }
 
 .about {
@@ -115,6 +125,10 @@
   font-size: 16px;
   color: #4d4d4d;
   margin-bottom: 37px;
+}
+
+.about .about-left .about--btn:hover {
+  border: 1px solid #494949;
 }
 
 .about .about-right img {
@@ -155,7 +169,6 @@
 
 .services .services-pic img {
   margin-top: 82px;
-  overflow: hidden;
 }
 
 .services .services-pic p {
@@ -181,7 +194,6 @@
   background-color: #f6f6f6;
   padding-top: 126px;
   padding-bottom: 108px;
-  overflow: hidden;
 }
 
 .portfolio .topic__portfolio {
@@ -190,14 +202,16 @@
 
 .portfolio img {
   margin-bottom: 30px;
+  width: 100%;
 }
 
-.portfolio .portfolio__btn {
-  text-align: center;
+.portfolio img:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.portfolio .portfolio__btn a {
-  border: none;
+.portfolio button:focus {
+  outline: none;
 }
 
 @-webkit-keyframes jump-btn {
@@ -229,6 +243,24 @@
 .shadow__btn {
   -webkit-animation: jump-btn 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
           animation: jump-btn 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
+}
+
+.scale {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.scale:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.well {
+  border: none;
+  background-image: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
 }
 
 .testi {
@@ -331,6 +363,7 @@
   background-size: cover;
   padding-top: 144px;
   padding-bottom: 38px;
+  position: relative;
 }
 
 .say .topic__say {
@@ -349,17 +382,17 @@
 .say form input {
   height: 56px;
   margin-bottom: 29px;
-  margin-left: 0;
   border-radius: 0;
 }
 
 .say form textarea {
   resize: none;
   border-radius: 0;
+  height: 200px;
+  margin-bottom: 27px;
 }
 
 .say form .say__btn {
-  margin-top: 29px;
   margin-bottom: 57px;
 }
 
@@ -439,5 +472,22 @@ footer .say__year p {
   color: #ffffff;
   font-size: 16px;
   margin-bottom: 0;
+}
+
+.top--foot {
+  display: block;
+  position: absolute;
+  width: 45px;
+  line-height: 40px;
+  background-color: #ffffff;
+  right: 20px;
+  bottom: 160px;
+  font-size: 20px;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+.top--foot:hover {
+  color: #4d4d4d;
 }
 /*# sourceMappingURL=style.css.map */
